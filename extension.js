@@ -74,7 +74,7 @@ const MyPopup = GObject.registerClass(
                 this.menu.addMenuItem(subItem)
                 for (let j = i; j < i + 5; j++) {
                     let result = data[j]
-                    let currenyFormat = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 2, style: 'currency', currency: 'USD' }).format(result.price)
+                    let currenyFormat = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 10, style: 'currency', currency: 'USD' }).format(result.price)
                     let item = new PopupMenu.PopupImageMenuItem(
                         `${result.name} (${result.symbol}) : ${currenyFormat}`,
                         Gio.icon_new_for_string(Me.dir.get_path() + '/icons/' + result.symbol.toLowerCase() + ".png")
