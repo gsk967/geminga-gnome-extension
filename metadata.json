@@ -1,0 +1,10 @@
+{
+  "name": "Geminga",
+  "description": "Cosmos-SDK based chain crypto coins real price indicator",
+  "uuid": "gsk967@github.com",
+  "shell-version": [
+    "3.28",
+    "3.36"
+  ],
+  "version": 1.0
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <enum id="com.github.gsk967.geminga.enum-currency">
+        <value value="0" nick="USD" />
+        <value value="1" nick="INR" />
+    </enum>
+    <schema id="com.github.gsk967.geminga" path="/com/github/gsk967/geminga/">
+        <key name="currency" enum="com.github.gsk967.geminga.enum-currency">
+            <default>'USD'</default>
+            <summary>summary</summary>
+            <description>description</description>
+        </key>
+    </schema>
+</schemalist>
