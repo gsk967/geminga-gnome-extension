@@ -37,7 +37,8 @@ const MyPopup = GObject.registerClass(
             // log("my curreny:" + settings.get_enum('currency'));
             this._loadData(this._refreshUI);
             this._removeTimeout();
-            this._timeout = Mainloop.timeout_add_seconds(500, Lang.bind(this, this._refresh));
+            // fetch every 60seconds 
+            this._timeout = Mainloop.timeout_add_seconds(60, Lang.bind(this, this._refresh));
             return true;
         }
 
