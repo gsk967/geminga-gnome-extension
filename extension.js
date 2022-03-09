@@ -60,7 +60,7 @@ const MyPopup = GObject.registerClass(
         _refreshUI(data) {
             this.menu.removeAll();
             data = data.sort((b, c) => { return b.price - c.price }).reverse()
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 10; i++) {
                 let result = data[i]
                 let currenyFormat = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 10, style: 'currency', currency: 'USD' }).format(result.price)
                 let item = new PopupMenu.PopupImageMenuItem(
@@ -69,7 +69,7 @@ const MyPopup = GObject.registerClass(
                 )
                 this.menu.addMenuItem(item)
             }
-            for (let i = 5; i < data.length; i += 5) {
+            for (let i = 10; i < data.length; i += 5) {
                 let subItem = new PopupMenu.PopupSubMenuMenuItem(`Top ${i + 5} Coins List`);
                 this.menu.addMenuItem(subItem)
                 for (let j = i; j < i + 5; j++) {
