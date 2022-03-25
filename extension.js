@@ -13,7 +13,7 @@ const Me = imports.misc.extensionUtils.getCurrentExtension();
 // import the own utils 
 const Settings = Me.imports.utils
 
-const TW_URL = `https://api-osmosis.imperator.co/tokens/v1/all`;
+const TW_URL = `https://api-osmosis.imperator.co/tokens/v2/all`;
 
 let _httpSession, twMenu, myPopup;
 
